@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 90vw;     /* scales with screen width */
+            max-height: 70vh;    /* scales with screen height */
+            height: auto;
+            width: auto;
+        }
+
+        .text-below {
+            margin-top: 2vh;
+            font-size: clamp(16px, 4vw, 28px); /* responsive text */
+            color: white;
+            text-align: center;
+            padding: 0 5vw;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="funny.jpg" alt="Funny Image">
+
+    <div class="text-below">
+        Your customizable text goes here
+    </div>
+
+</body>
+</html>ml>
